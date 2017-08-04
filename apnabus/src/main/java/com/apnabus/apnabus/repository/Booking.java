@@ -22,12 +22,7 @@ public class Booking {
 	BookingService bookginService;
 
 	public List<Passenger> booking(List<Passenger> passengers) {
-		String check = bookginService.check(passengers);
-		if (check != null && check.equals(true)) {
-			bookginService.startBooking(passengers);
-		} else {
-			System.out.println(check);
-		}
+		bookginService.startBooking(passengers);
 		return null;
 	}
 
